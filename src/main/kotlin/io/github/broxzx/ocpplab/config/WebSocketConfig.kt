@@ -1,5 +1,6 @@
-package io.github.broxzx.ocpplab.ocpp
+package io.github.broxzx.ocpplab.config
 
+import io.github.broxzx.ocpplab.service.OcppHandler
 import org.springframework.context.annotation.Configuration
 import org.springframework.web.socket.config.annotation.EnableWebSocket
 import org.springframework.web.socket.config.annotation.WebSocketConfigurer

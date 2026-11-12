@@ -1,0 +1,1 @@
+websocat --protocol ocpp1.6 ws://localhost:8080/ocpp/CP001
