@@ -8,6 +8,9 @@ import java.util.concurrent.ConcurrentHashMap
 class TransactionStorage {
     private val openTransactionsMap = ConcurrentHashMap<Int, Transaction>()
 
+    fun get(txId: Int): Transaction? {
+        return openTransactionsMap[txId]
+    }
 
     fun add(transactionId: Int, transaction: Transaction) {
         openTransactionsMap[transactionId] = transaction

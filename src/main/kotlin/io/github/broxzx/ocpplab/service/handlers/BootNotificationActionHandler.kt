@@ -12,8 +12,6 @@ class BootNotificationActionHandler : ActionHandler {
 
     override fun action(): Operation = Operation.BOOT_NOTIFICATION
 
-    override fun type(): Int = 2
-
     override fun handle(
         session: WebSocketSession,
         messagePayload: MessagePayload

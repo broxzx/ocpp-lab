@@ -6,7 +6,9 @@ enum class Operation {
     HEART_BEAT("Heartbeat"),
     STATUS_NOTIFICATION("StatusNotification"),
     AUTHORIZE("Authorize"),
-    START_TRANSACTION("StartTransaction");
+    START_TRANSACTION("StartTransaction"),
+    METER_VALUES("MeterValues"),
+    STOP_TRANSACTION("StopTransaction");
 
 
     constructor(operationValue: String) {

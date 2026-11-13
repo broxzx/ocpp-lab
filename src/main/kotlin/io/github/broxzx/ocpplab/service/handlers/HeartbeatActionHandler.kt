@@ -11,8 +11,6 @@ import java.time.Instant
 class HeartbeatActionHandler : ActionHandler {
     override fun action(): Operation = Operation.HEART_BEAT
 
-    override fun type(): Int = 2
-
     override fun handle(
         session: WebSocketSession,
         messagePayload: MessagePayload
@@ -22,6 +20,4 @@ class HeartbeatActionHandler : ActionHandler {
             HeartbeatResponse(Instant.now().toString())
         )
     }
-
-
 }
